@@ -10,6 +10,10 @@ a {
  text-decoration: none; 
 }
 
+h4 {
+  font-size: 18px;
+}
+
 body {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -23,12 +27,15 @@ body {
   margin: 0 auto;
 }
 
+/* header */
+
 .header__row {
   height: 76px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #EFF5FB;
+  margin-bottom: 64px;
 }
 
 .header__links {
@@ -96,6 +103,128 @@ body {
   .header__burger {
     display: block;
   }
+}
+
+/* main */
+
+h1 {
+  margin-bottom: 34px;
+}
+
+.hero > .hero__categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 680px) {
+  .hero > .hero__categories {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  }
+}
+
+.hero__category {
+  font-weight: 600;
+  padding: 6px 8px;
+  border: 1px solid #C1C5CD;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+li.hero__category.active {
+  border: 2px solid #16C8BB;
+  transition: background-color 0.2s;
+}
+
+li.hero__category:hover {
+  cursor: pointer;
+  background-color: #E3F5F5;
+}
+
+.hero__cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 930px) {
+  .hero__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.hero__card {
+  width: 588px;
+  overflow: hidden;
+  border-radius: 15px;
+  border: 1px solid #C1C5CD;
+  position: relative;
+}
+
+@media (max-width: 930px) {
+  .hero__card {
+    width: 100%;
+  }
+}
+
+.hero__card:hover {
+  cursor: pointer;
+}
+
+.hero__card .hero__categories {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  max-width: 300px;
+}
+
+.hero__card .hero__categories .hero__category {
+  display: inline-flex;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, .7);
+}
+
+.hero__card-img {
+  width: 100%;
+}
+
+.hero__card-content {
+  min-height: 240px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__card-articel{
+  flex: 1 1 auto;
+}
+
+.hero__card-title {
+  margin-bottom: 4px;
+}
+
+.hero__card-autor {
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #494949;
+}
+
+.hero__card-text {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hero__card-date {
+  font-size: 12px;
+  color: #868686;
 }
 
 
