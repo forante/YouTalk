@@ -35,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #EFF5FB;
-  margin-bottom: 64px;
+  margin-bottom: 16px;
 }
 
 .header__links {
@@ -106,6 +106,12 @@ body {
 
 /* main */
 
+.hero__nav p {
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.7);
+  margin-bottom: 30px;
+}
+
 h1 {
   margin-bottom: 34px;
 }
@@ -121,7 +127,7 @@ h1 {
 @media (max-width: 680px) {
   .hero > .hero__categories {
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: scroll; 
   }
 }
 
