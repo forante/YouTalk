@@ -139,6 +139,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 5px;
+  flex: 1 0 auto;
 }
 
 li.hero__category.active {
